@@ -1,260 +1,469 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hiking</title>
-  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon"/>
-  <link rel="stylesheet" href="./assets/fonts/themify-icons-fonts/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="./assets/css/animate.css">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/animate.css">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
-<body>
-    <button id="btnScrolltoTop" class="active">
-        <i class="ti-arrow-up" aria-hidden="true"></i>
-      </button>
-    <header class="header">
-        <section id="top-nav">
-            <nav class="top-nav">
-                <div class="container">
-                    <div class="row top-nav__header wow fadeInDown"data-wow-duration="1s">
-                        <div class="col-4 col-lg-2" >
-                            <a href="#"><img src="./assets/img/logo.png" class="top-nav__logo"></a>
-                        </div>
-                        <div class="col-6 col-lg-8">
-                            <ul class="top-nav__menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Our story</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-2 col-lg-2">
-                            <div class="box-search">
-                                <input type="text" class="top-nav__search" placeholder="" aria-label="Enter">
-                                    <a class="top-nav__search--img" href="#" ></a>
-                                </input>         
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </section> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">  
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Summer Exploring</title>
+  </head>
+  <body>
+    <button id="btnScrolltoTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <header>
+      <section class="hiking-header position-relative">
+        <div class="btn-bar">
+          <div class="menu-btn_burger">  
+          </div>
+        </div>
+        <div class="container  animate__animated animate__fadeInDown animate__delay-0.5s">
+          <div class="logo">
+            <a href="/"><img src="./img/logo.png" alt=""></a>
+          </div>
+          <nav class="hiking-nav">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Menu</a></li>
+              <li><a href="/">Our Story</a></li>
+              <li><a href="/">Contact Us</a></li>
+              <li><div class="input-form">
+                <input type="text">
+                <div class="icon-search"><a href="/"><img src="./img/icon-search.png" alt=""></a></div>
+                </div></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </header>
     <main>
-    <section id="banner">
-        <div class="container-fluid" >
-            <img class="banner-shape" src="./assets/img/Shape.png" alt="">
-            <div class="banner-full">
-                <div class="banner-content wow bounceInLeft"data-wow-duration="1s"data-wow-delay="1s">
-                    <h1>IT´S TIME FOR HIKING</h1>
-                    <p class="banner-content__item">LOREMIPSUM DOLOR</p>
-                    <div class="button-banner">
-                        <a href="#">Read more</a>
-                    </div>
-                    <p class="banner-content__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
-                </div>
-            </div>
-            <img class="banner-shapeunder" src="./assets/img/Shapeunder.png" alt="">
-        </div>
-    </section>
-    <section id="show">
-        <div class="container">
-            <div class="show-content">
-                <h2>LET´S go</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-            </div>
-            <div class="row show-content__list">
-                <div  class="col-4 wow pulse animated"data-wow-duration="1s"data-wow-delay="1s">
-                    <div class="show-content__item">
-                        <a href="">
-                            <img src="./assets/img/item1.png">
-                            <div class="show-content__item--box">
-                                <p class="show-content__item--title">Lorem ipsum</p>
-                                <p class="show-content__item--desc">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div  class="col-4 wow pulse animated"data-wow-duration="1s"data-wow-delay="1.5s">
-                    <div class="show-content__item">
-                        <a href="">
-                            <img src="./assets/img/item2.png">
-                            <div class="show-content__item--box">
-                                <p class="show-content__item--title">Lorem ipsum</p>
-                                <p class="show-content__item--desc">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div  class="col-4 wow pulse animated"data-wow-duration="1s"data-wow-delay="2s">
-                    <div class="show-content__item">
-                        <a href="">
-                            <img src="./assets/img/item3.png">
-                            <div class="show-content__item--box">
-                                <p class="show-content__item--title">Lorem ipsum</p>
-                                <p class="show-content__item--desc">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="show-button wow pulse animated"data-wow-duration="1s"data-wow-delay="2.5s">
-                <a href="#">show more</a>
-            </div>
-        </div>
-        <div class="show-img"></div>
-    </section>
-    <section id="promotion">
+      <section class="hiking-banner">
         <div class="container-fluid">
-            <div class="row mx-0 promotion-content">
-                <div class="col-6 promotion-content__list">
-                    <img class="promotion-content__list--item" src="./assets/img/item4.png">
-                </div>
-                <div class="col-6 promotion-content__list">
-                    <div class="promotion-content__list--box wow slideInRight"data-wow-delay="1s">
-                        <h3 class="promotion-content__item--title">Discount up to 50% All Excursions</h3>
-                        <p class="promotion-content__item--desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <div class="promotion-button">
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 promotion-content__list">
-                    <div class="promotion-content__list--box wow slideInLeft"data-wow-delay="1s">
-                        <h3 class="promotion-content__item--title">January’s Promo: Buy 1 Get 1 Free!</h3>
-                        <p class="promotion-content__item--desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <div class="promotion-button">
-                            <a href="#">Read more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 promotion-content__list">
-                    <img class="promotion-content__list--item" src="./assets/img/item5.png">
-                </div>
+          <div class="container animate__animated animate__fadeInLeft animate__delay-0.5s">
+            <div class="slider">
+              <div class="banner-text">
+                <p>IT'S TIME FOR HIKING</p>
+                <p>LOREMIPSUM DOLOR</p>
+                <a href="/">READ MORE</a>
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipi-scing elit, sed do iusmod tempor 
+                incididunt ut labore et dolore magna.</p>
+              </div>
+              <div class="banner-text">
+                <p>HIKING ADVENTURE</p>
+                <p>KNOW THE MOUNTAIN</p>
+                <a href="/">READ MORE</a>
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipi-scing elit, sed do iusmod tempor 
+                incididunt ut labore et dolore magna.</p>
+              </div>
+              <div class="banner-text">
+                <p>GO INTO THE FOREST</p>
+                <p>EXPLORE THE WORLD</p>
+                <a href="/">READ MORE</a>
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipi-scing elit, sed do iusmod tempor 
+                incididunt ut labore et dolore magna.</p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="about">
-        <div class="container-fluid about-contain">
-            <img class="about-contain__img1" src="./assets/img/Shape2.png" alt="">
-            <div class="about-banner wow fadeInDown"data-wow-delay="1s">
-                <h3 class="about-banner__title">Hiking in the mountains</h3>
-                <p class="about-banner-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis </p>                </div>
-                <img class="about-contain__img2" src="./assets/img/Shape3.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section id="place">
+      </section>
+      <section class="hiking-menu">
         <div class="container-fluid">
-            <div class="place-full">
-                <div class="place-content wow slideInRight">
-                    <p class="place-content__title1">EXPLORE</p>
-                    <p class="place-content__title2">THE WORLD</p>
-                </div>
+          <div class="container">
+            <div class="menu-title" data-aos="fade-down" data-aos-once ="true">
+              <p>Let's go</p>
+              <p>Lorem ipsum dolor sit amet,
+               consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
             </div>
-            <div class="place-img">
-                <img src="./assets/img/Shape5.png" alt="">
+            <div class="row image-list mx-0" data-aos="fade-up" data-aos-once ="true">
+              <div class="col-lg-4 col-md-6 col-12 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img1.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img2.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img3.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img1.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img2.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img3.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img1.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img2.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-img px-0">
+                <a href="/">
+                  <div class="img-box">
+                    <img src="./img/img3.png" alt="">
+                  </div>
+                  <div class="img-des">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit, sed do iusmod tempor 
+                      incididunt ut labore et dolore magna.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="menu-button">
+                <a href="/" id="load-more">Show more</a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="content">
-        <div class="container-fluid content">
-            <img class="content-shadow" src="./assets/img/Shadow3.png" alt="">
-            <div class="content-box">
-                <div class="row content-box__list wow pulse animated">
-                    <div class="col-4 content-box__item">
-                        <p class="content-box__item--title">lorem ipsum</p>
-                        <p class="content-box__item--desc">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
-                    </div>
-                    <div class="col-4 content-box__item">
-                        <p class="content-box__item--title">lorem ipsum</p>
-                        <p class="content-box__item--desc">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
-                    </div>
-                    <div class="col-4 content-box__item">
-                        <p class="content-box__item--title">lorem ipsum</p>
-                        <p class="content-box__item--desc">Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
-                    </div>
+      </section>
+      <section class="hiking-ourstory">
+        <div class="container-fluid">
+          <div class="ourstory-list row mx-0">
+              <div class="col-md-6 col-12 list-item-img px-0">
+                <a href="/"><img src="./img/img4.png" alt=""></a>
+              </div>
+              <div class="col-md-6 col-12 list-item-text">
+                <div data-aos="fade-left" data-aos-once ="true">
+                  <p>Discount up to 
+                    50% All Excursions</p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                  magna aliquam erat volutpat.</p>
+                  <div class="item-button">
+                    <a href="/">Read More</a>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="content-under">
-                <div class="content-under__quatation wow fadeInDown"data-wow-duration="1s"data-wow-delay="1s">
-                    <img src="./assets/img/quotation.png" alt="">
-                </div>
-                <p class="content-under__text wow fadeInDown"data-wow-duration="1s"data-wow-delay="1.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-                <p class="content-undex__quote wow fadeInDown"data-wow-duration="1s"data-wow-delay="1.5s">Lorem Ipsum</p>
+            <div class="ourstory-list row mx-0">
+              <div class="col-md-6 col-12 list-item-img px-0">
+                <a href="/"><img src="./img/img5.png" alt=""></a>
+              </div>
+              <div class="col-md-6 col-12 list-item-text">
+                <div data-aos="fade-right" data-aos-once ="true">
+                  <p>January’s Promo:
+                    Buy 1 Get 1 Free!</p>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod
+                  tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <div class="item-button">
+                    <a href="/">Read More</a>
+                  </div>
+                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="send">
-        <div class="container-fluid send">
-            <div class="send-box wow fadeInDown"data-wow-duration="1s"data-wow-delay="1s">
-                <h3 class="send-box__title">Title Here</h3>
-                <p class="send-box_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
-                <div class="send-box__form">
-                    <input type="email" class="form-control" id="" placeholder="Your Email">
-                    <a href=""><img class="form-control__img" src="./assets/img/Button.png" alt=""></a>
+      </section>
+      <section class="hiking-letter">
+        <div class="container-fluid">
+          <div class="container" data-aos="zoom-in" data-aos-once ="true">
+            <div id="letter-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="letter-text">
+                    <p>Hiking in the mountains</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt
+                      ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quis </p>
+                  </div>
                 </div>
+                <div class="carousel-item">
+                  <div class="letter-text">
+                    <p>Hiking in the mountains</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt
+                      ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quis </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="letter-text">
+                    <p>Hiking in the mountains</p>
+                    <p>Lorem ipsum dolor sit amet,
+                      consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt
+                      ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quis </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#letter-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#letter-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <img class="send-box__img" src="./assets/img/Shape7.png" alt="">
+          </div>
         </div>
-    </section>
+      </section>
+      <section class="hiking-explore">
+        <div class="container-fluid" style="overflow-x: hidden;">
+          <div class="container">
+            <div class="explore-text" data-aos="fade-left" data-aos-once ="true">
+              <p>Explore</p>
+              <p>The World</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hiking-contact">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row contact-list mx-0 justify-content-between" data-aos="fade-down" data-aos-once ="true">
+              <div class="col-lg-4 col-md-6 col-12 col-contact px-0">
+                <a href="/"><img src="./img/img1.png" alt=""></a>
+                <div class="contact-des">
+                  <p>Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consecte
+                    sectetur adipisicing elit, tation omne 
+                    ullamco laboris nisi ut aliqolore.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-contact px-0">
+                <a href="/"><img src="./img/img2.png" alt=""></a>
+                <div class="contact-des">
+                  <p>Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consecte
+                    sectetur adipisicing elit, tation omne 
+                    ullamco laboris nisi ut aliqolore.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 col-contact px-0">
+                <a href="/"><img src="./img/img3.png" alt=""></a>
+                <div class="contact-des">
+                  <p>Lorem ipsum</p>
+                  <p>Lorem ipsum dolor sit amet, consecte
+                    sectetur adipisicing elit, tation omne 
+                    ullamco laboris nisi ut aliqolore.</p>
+                </div>
+              </div>
+            </div>
+            <div id="person-carousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-once ="true">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="contact-info">
+                    <p>''</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt ut labore et dolore magna
+                       aliqua. Ut enim ad minim veniam, quis </p>
+                    <img src="./img/person.jpg" alt="" class="info-img">
+                    <p>Lorem Ipsum</p>
+                  </div>                </div>
+                <div class="carousel-item">
+                  <div class="contact-info">
+                    <p>''</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt ut labore et dolore magna
+                       aliqua. Ut enim ad minim veniam, quis </p>
+                    <img src="./img/person2.jpg" alt="" class="info-img">
+                    <p>Lorem Ipsum</p>
+                  </div>                </div>
+                <div class="carousel-item">
+                  <div class="contact-info">
+                    <p>''</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                      sed do ei-usmod tempor incididunt ut labore et dolore magna
+                       aliqua. Ut enim ad minim veniam, quis </p>
+                    <img src="./img/person3.jpg" alt="" class="info-img">
+                    <p>Lorem Ipsum</p>
+                  </div>                
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#person-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#person-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hiking-subcribe">
+        <div class="container-fluid">
+          <div class="container" data-aos="fade-right" data-aos-once ="true">
+            <div class="subcribe-text">
+              <p>Title Here</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+              <div class="input-group subcribe-input">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="subcribe">
+                <a href="/" class="input-group-text" id="subcribe">SUBCRIBE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-        <div class="container-fluid footer-full">
-            <div class="container">
-                <div class="row footer-full__box">
-                    <div class="col-5 footer-full__box--col5  wow bounceInLeft">
-                        <p class="footer-full__box--title">Title Here</p>
-                        <p class="footer-full__box--desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
-                        <div class="footer-full__box--img">
-                            <img src="./assets/img/Instagram.png">
-                            <img src="./assets/img/Facebook.png">
-                            <img src="./assets/img/Twitter.png">
-                            <img src="./assets/img/WhatsApp.png">
-                        </div>
-                    </div>
-                    <nav class="col-2 footer-full__box--nav1 wow slideInRight">
-                        <ul class="footer-full__box--title2">
-                            <li>About</li>
-                            <li><a href="">History</a></li>
-                            <li><a href="">Our Team</a></li>
-                            <li><a href="">Brand Guidelines</a></li>
-                            <li><a href="">Terms & Condition</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="col-2 wow slideInRight">
-                        <ul class="footer-full__box--title2 ">
-                            <li>Services</li>
-                            <li><a href="">How to Order</a></li>
-                            <li><a href="">Our Product</a></li>
-                            <li><a href="">Order Status</a></li>
-                            <li><a href="">Promo</a></li>
-                            <li><a href="">Payment Method</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="col-2 wow slideInRight">
-                        <ul class="footer-full__box--title2">
-                            <li>Other</li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Help</a></li>
-                            <li><a href="">Privacy</a></li>
-                        </ul>
-                    </nav>
+    <footer>
+      <section class="hiking-footer">
+        <div class="container-fluid">
+          <div class="container" data-aos="fade-up" data-aos-once ="true">
+            <div class="row footer-list mx-0 justify-content-between">
+              <div class="col-lg-4 col-md-6 col-12 footer-col px-0">
+                <p>Title Here</p>
+                <p>Lorem ipsum dolor sit amet,
+                   consecte-tur adipiscing elit.
+                    Aliquam at dignis-sim nunc, id maximus ex.
+                     Etiam nec dignissim elit, at dignissim enim. </p>
+                <div class="footer-col-icon d-flex">
+                  <a href="/"><img src="./img/icon-ins.png" alt=""></a>
+                  <a href="/"><img src="./img/icon-fb.png" alt=""></a>
+                  <a href="/"><img src="./img/icon-twitter.png" alt=""></a>
+                  <a href="/"><img src="./img/icon-app.png" alt=""></a>
                 </div>
+              </div>
+              <div class="col-lg-2 col-md-6 footer-col offset-lg-1 px-0">
+                <p>About</p>
+                <ul>
+                  <li><a href="/">History</a></li>
+                  <li><a href="/">OurTeam</a></li>
+                  <li><a href="/">Brand Guidelines</a></li>
+                  <li><a href="/">Terms & Condition</a></li>
+                  <li><a href="/">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 footer-col px-0">
+                <p>Services</p>
+                <ul>
+                  <li><a href="/">How to Order</a></li>
+                  <li><a href="/">Our Product</a></li>
+                  <li><a href="/">Order Status</a></li>
+                  <li><a href="/">Promo</a></li>
+                  <li><a href="/">Payment Method</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 footer-col px-0">
+                <p>Other</p>
+                <ul>
+                  <li><a href="/">Contact Us</a></li>
+                  <li><a href="/">Help</a></li>
+                  <li><a href="/">Privacy</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </section>
     </footer>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/wow.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/jquery.min.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8d1715f80f.js"crossorigin="anonymous"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        new WOW().init();
+      AOS.init({
+        offset:350,
+        duration:1000
+      });
     </script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-</body>
+  </body>
+</html>
