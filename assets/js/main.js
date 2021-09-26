@@ -26,3 +26,18 @@ btnScrolltoTop.addEventListener('click', function(){
   $('html, body').animate({scrollTop: 0}, 'slow');
 });
 
+const menuBtn = document.querySelector('.btn-bar');
+    let menuOpen = false;
+    menuBtn.addEventListener('click', () => {
+      if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+      }else{
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+      }
+    });
+
+$('.btn-bar').click(function(){
+  $('.menu').slideToggle();
+})

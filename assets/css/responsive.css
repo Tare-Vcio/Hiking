@@ -1,106 +1,125 @@
-
-@media (min-width: 1400px) {
-
-}
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1315px;
-    }
-    .top-nav {
-        padding: 30px 90px;
-    }
-    .banner-content {
-        padding: 295px 569px 220px 90px;
+@media(min-width: 1200px){
+    .container{
+        max-width: 1300px;
     }
 }
-/* PC */
 
-@media (min-width: 1025px) and (max-width: 1199px) {
-    .top-nav__search--img::after {
-        right: calc((100% - 96%));
+@media(min-width: 1023px){
+    .top-nav__menu li:hover {
+        opacity: 0.8;
     }
-    .top-nav__menu a {
-        font-size: 15px;
-        letter-spacing: 4px;
+    .button-banner a:hover {
+        opacity: 0.9;
+        background-color: #deb37e;
     }
-    .top-nav {
-        padding: 20px 0;
+    .show-content__item:hover {
+        box-shadow: 0px 0px 30px #cc9966;
     }
-    .top-nav__menu {
+    .show-button a:hover {
+        opacity: 0.9;
+        background-color: #deb37e;
+    }
+    .promotion-button a:hover {
+        opacity: 0.9;
+        background: #54524f;
+    }
+    .footer-full__box--title2 li a:hover {
+        opacity: 0.6;
+    }
+    .footer-full__box--img img:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container{
+        padding: 0 50px;
+    }
+    .promotion-content__list--box {
+        padding: 70px 50px 50px 90px;
+    }
+    .promotion-content__item--title {
+        font-size: 4vw;
+    }
+    .promotion-content__item--desc {
+        font-size: 2.5vw;
+        line-height: 1.2;
+        padding-bottom: 120px;
+    }
+    .place-full::after {
+        bottom: -1px;
+    }
+}
+
+@media (max-width:1199px){
+    .place-content {
+        text-align: center;
+        padding-top: 270px;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        padding: 0 50px;
+    }
+    .promotion-content__list--box {
+        padding: 50px 50px 50px 60px;
+    }
+    .promotion-content__item--title {
+        font-size: 4vw;
+    }
+    .promotion-content__item--desc {
+        font-size: 2.2vw;
+        line-height: 1.2;
+        padding-bottom: 60px;
+    }
+    .promotion-button a {
+        padding: 20px 50px;
+    }
+    .footer-full__box--title2 li {
+        font-size: 20.7px;
+    }
+    .show-content__item--box {
+        padding: 20px 25px 40px 15px;
+    }
+    .show-content__item img:nth-last-child(n) {
+        height: 290px;
+    }
+    .show-content__item--title {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 991px){
+    .btn-bar{
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .logo {
+        display: contents;
+    }
+    .top-nav__header {
         justify-content: center;
     }
-    .top-nav__search {
-        width: 160px;
-        padding-left: 0;
-    }
-    .banner-content {
-        padding: 190px 422px 190px 40px;
-    }
-    .banner-full {
-        min-height: 810px;
-        margin-top: -132px;
-    }
-    .banner-content__item {
-        font-size: 24px;
-        padding-top: 15px;
-    }
-    .button-banner {
-        padding: 50px 0 25px 0;
-    }
-    .banner-shapeunder {
-        bottom: 136px;
-    }
-    .banner-content h1 {
-        font-size: 70.67px;
-    }
-}
-
-@media (min-width: 1024px) {
-    
-}
-
-@media (max-width: 1024px) {
-    .top-nav__menu a {
-        font-size: 15px;
-        letter-spacing: 4px;
-    }
-    .top-nav {
-        padding: 20px 0;
+    .top-nav .container {
+        display: block;
+        text-align: center;
     }
     .top-nav__menu {
-        justify-content: center;
+        display: block;
+        padding: 0 0 15px;
     }
-    .top-nav__search {
-        width: 160px;
-        padding-left: 0;
+    .menu ul li:not(:first-child){
+        margin-left: unset;
     }
-    .top-nav__search--img::after {
-        right: calc((100% - 96%));
+    .menu ul li {
+        margin-top: 25px;
     }
-    .banner-content {
-        padding: 190px 422px 190px 40px;
-    }
-    .banner-full {
-        min-height: 810px;
-        margin-top: -132px;
-    }
-    .banner-content__item {
-        font-size: 24px;
-        padding-top: 15px;
-    }
-    .button-banner {
-        padding: 50px 0 25px 0;
-    }
-    .banner-shapeunder {
-        bottom: 136px;
-    }
-    .banner-content h1 {
-        font-size: 70.67px;
-    }
-    
-    
-}
-
-@media (max-width:1199px) {
-   
 }
